@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Site Title-->
+        <title>Home</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <!-- Stylesheets-->
+        <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500,500i,600|Roboto:400,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <style type="text/css">
+          body{
+                width: 50%;
+                margin: auto
+          }
+          .table-borderless tbody+tbody, .table-borderless td, .table-borderless th, .table-borderless thead th {
+              border: 0;
+          }
+          .table{
+            color: #000;
+          }.container{
+            border: 1px solid #336b28;
+          }
+          p{
+            color: #6f6f6f;
+            font-size: 12px;
+            font-weight: 400;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col"><img src="images/unnamed.png"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="col">Dear {{ user.first_name }}</th>
+
+              </tr>
+              <tr>
+                <td scope="row">
+                  You are trying to login on M-SHIRIKI's admin application and for the security purpose
+                    it is required to enter the OTP. This OTP is valid only for next 10 minutes.
+                    To continue your login with this session please enter the OTP {{ otp }}.
+
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  Best Regards
+                  M-SHIRIKI
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <p>Copyright 2019 M-SHIRIKI. All Rights Reserved.</p>
+                </th>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </body>
+</html>

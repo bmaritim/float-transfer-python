@@ -1,0 +1,9 @@
+Dear {{ user.username }}
+
+You are trying to login on M-SHIRIKI's admin application and for the security purpose it is required to enter the OTP.
+This OTP is valid only for next 10 minutes. To continue your login with this session please enter the OTP {{ user.otp }}
+
+Best Regards
+M-SHIRIKI
+
+Copyright 2019 M-SHIRIKI. All Rights Reserved.
