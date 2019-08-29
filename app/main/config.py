@@ -24,7 +24,7 @@ class DevelopmentConfig(Config):
     MAIL_SERVER = 'smtp.sendgrid.net'
     MAIL_PORT = 587
     MAIL_USERNAME = 'apikey'
-    MAIL_PASSWORD = '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'
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
     OCP_APIM_SUBSCRIPTION_KEY = '0f4e27be90ec4437be6960e1e2565ebd'
